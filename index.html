@@ -47,8 +47,9 @@
   </div>
   <iframe id="app" title="PUBReC Lab Inventory" allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <script>
-  // The live web app (Google Apps Script). Change this one line if the deployment URL ever changes.
-  const APP_URL = 'https://script.google.com/macros/s/AKfycbxLSSF6RTWd4nJv6SC93uKz8u-kXwImC6RQ7Tdg-t4VVq2yp-a2XViPWI3thPL591Y/exec';
+  // The live web app (Google Apps Script, owned by pubrec@pu.ac.ke). The /a/macros/pu.ac.ke/ form avoids Google's
+  // multi-account error ("Sorry, unable to open the file") and still works for people without a Google login.
+  const APP_URL = 'https://script.google.com/a/macros/pu.ac.ke/s/AKfycbxLSSF6RTWd4nJv6SC93uKz8u-kXwImC6RQ7Tdg-t4VVq2yp-a2XViPWI3thPL591Y/exec';
 
   const frame = document.getElementById('app'), splash = document.getElementById('splash'), offline = document.getElementById('offline');
   document.getElementById('yr').textContent = new Date().getFullYear();
